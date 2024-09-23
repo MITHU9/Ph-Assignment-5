@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="/output/output.css" />
+  </head>
+  <body>
+    <header class="sticky top-0">
+      <div class="bg-[#F9F7F3]">
+        <nav class="py-6 md:w-11/12 md:mx-auto pb-8 px-4 mr-3 md:px-16">
+          <ul class="flex md:justify-between items-center gap-2">
+            <li id="home">
+              <a
+                class="text-xl md:text-2xl font-bold bg-primary py-2 md:py-3 px-4 md:px-8 rounded-xl"
+                href="#blog"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="flex items-center gap-2" href="#donate">
+                <img class="w-8" src="/assets/logo.png" alt="logo" />
+                <span class="font-bold text-xl">Donate Bangladesh</span>
+              </a>
+            </li>
+            <li
+              class="flex items-center gap-1 text-lg font-semibold text-gray-600"
+            >
+              <img class="w-6" src="/assets/coin.png" alt="coin" />
+              <span>10,000</span> BDT
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="w-11/12 mx-auto mt-12">
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border-base-300 bg-base-200 border"
+      >
+        <div class="collapse-title text-xl font-bold">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p class="font-semibold">
+            he Document Object Model (DOM) is a programming interface for web
+            documents. It represents the structure of a webpage as a
+            hierarchical tree of objects, where each part of the document (like
+            elements, attributes, and text) is represented as a node. The DOM
+            allows programming languages like JavaScript to dynamically access,
+            modify, and manipulate the content, structure, and style of a
+            webpage.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border-base-300 bg-base-200 border"
+      >
+        <div class="collapse-title text-xl font-bold">
+          How do you select an element from the DOM?
+        </div>
+        <div class="collapse-content">
+          <p class="font-semibold">
+            To select an element from the DOM in JavaScript, you can use several
+            built-in methods provided by the document object. Each method allows
+            you to target elements in different ways, such as by their ID, class
+            name, tag name, or CSS selector. Here are the most common ways to
+            select elements from the DOM: <br />
+            1. document.getElementById() <br />
+            2. document.querySelector() <br />
+            3. document.querySelectorAll() <br />
+            4. document.getElementsByClassName() <br />
+            5. document.getElementsByTagName() <br />
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border-base-300 bg-base-200 border"
+      >
+        <div class="collapse-title text-xl font-bold">
+          What is event delegation in the context of the DOM, and why is it
+          useful?
+        </div>
+        <div class="collapse-content">
+          <p class="font-semibold">
+            Event delegation is a technique in JavaScript where a single event
+            listener is attached to a parent element instead of attaching
+            individual listeners to multiple child elements. This allows the
+            parent to handle events triggered by its child elements. When an
+            event occurs on a child, it bubbles up to the parent, which can then
+            respond to the event based on the target of the event. <br />
+            <span class="text-xl font-bold"
+              >Advantages of Event Delegation</span
+            >
+            <br /><b>Performance</b>: Attaching a single event listener to a
+            parent instead of multiple listeners to each child element reduces
+            memory usage and improves performance, especially when dealing with
+            a large number of child elements. <br />
+            <b>Dynamic Content:</b> If child elements are added or removed
+            dynamically (e.g., through AJAX or user actions), you don’t need to
+            reattach event listeners to each new element. The parent listener
+            will handle events for any current or future children. <br />
+            <b>Simpler Code Management: </b> Managing one event listener is
+            often simpler than managing multiple listeners. This reduces the
+            complexity of your code and can help prevent bugs. <br />
+            <b>Easier Event Handling:</b> You can handle events based on the
+            specific child element that triggered the event, allowing for more
+            flexible event management.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border-base-300 bg-base-200 border"
+      >
+        <div class="collapse-title text-xl font-bold">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p class="font-semibold">
+            he Document Object Model (DOM) is a programming interface for web
+            documents. It represents the structure of a webpage as a
+            hierarchical tree of objects, where each part of the document (like
+            elements, attributes, and text) is represented as a node. The DOM
+            allows programming languages like JavaScript to dynamically access,
+            modify, and manipulate the content, structure, and style of a
+            webpage.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="/js/home.js"></script>
+  </body>
+</html>
