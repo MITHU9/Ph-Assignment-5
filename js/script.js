@@ -25,7 +25,7 @@ history.addEventListener("click", () => {
 });
 
 blog.addEventListener("click", () => {
-  window.location.href = "/blogpage/blog.html";
+  window.location.href = "blog.html";
 });
 
 donateNoakhali.addEventListener("click", () => {
