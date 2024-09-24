@@ -44,7 +44,7 @@
         </div>
         <div class="collapse-content">
           <p class="font-semibold">
-            he Document Object Model (DOM) is a programming interface for web
+            The Document Object Model (DOM) is a programming interface for web
             documents. It represents the structure of a webpage as a
             hierarchical tree of objects, where each part of the document (like
             elements, attributes, and text) is represented as a node. The DOM
@@ -117,18 +117,81 @@
         class="collapse collapse-arrow border-base-300 bg-base-200 border"
       >
         <div class="collapse-title text-xl font-bold">
-          What is the Document Object Model (DOM)?
+          How do you manipulate an element's attributes and styles using the
+          DOM?
         </div>
         <div class="collapse-content">
-          <p class="font-semibold">
-            he Document Object Model (DOM) is a programming interface for web
-            documents. It represents the structure of a webpage as a
-            hierarchical tree of objects, where each part of the document (like
-            elements, attributes, and text) is represented as a node. The DOM
-            allows programming languages like JavaScript to dynamically access,
-            modify, and manipulate the content, structure, and style of a
-            webpage.
-          </p>
+          <div>
+            <p class="font-semibold">
+              To manipulate an element's attributes and styles using the DOM
+              (Document Object Model), you can use various JavaScript methods
+              and properties.
+            </p>
+            <h2 class="text-xl font-bold">1. Manipulating Attributes</h2>
+            <p>
+              <span class="text-lg font-semibold">getAttribute()</span>
+              <br />
+              This method is used to retrieve the value of an attribute. <br />
+              <span>let value = element.getAttribute("attributeName"); </span>
+              <span
+                >let link = document.getElementById("myLink"); <br />
+                let hrefValue = link.getAttribute("href"); <br />
+                console.log(hrefValue); <br />
+              </span>
+            </p>
+            <p>
+              <span class="text-lg font-semibold">settAttribute()</span>
+              <br />
+              <span
+                >This method is used to set or change the value of an
+                attribute.</span
+              >
+              <br />
+              <span>element.setAttribute("attributeName", "value"); </span>
+              <span
+                >let img = document.getElementById("myImage"); <br />
+                img.setAttribute("src", "new-image.jpg");
+              </span>
+            </p>
+            <p>
+              <span class="text-lg font-semibold">Direct Property Manipulation</span>
+              <br />
+              <span
+                >Some attributes can be manipulated directly via element
+                properties.</span
+              >
+              <br />
+              <span
+                >element.id = "newId"; <br />
+                element.className = "newClass";
+              </span>
+              <span
+                >let input = document.getElementById("myInput"); <br />
+                input.value = "New value";
+              </span>
+            </p>
+            <h2 class="text-xl font-bold">2. Manipulating Styles</h2>
+            <p>
+              <span class="text-lg font-semibold">style Property</span> <br>
+              <span>You can modify an element's inline styles using the style property. This gives access to specific CSS properties in camelCase format.</span> <br>
+              <span>element.style.propertyName = "value";
+              </span>
+              <span>let div = document.getElementById("myDiv"); <br>
+                div.style.backgroundColor = "blue"; <br>
+                div.style.width = "100px"; <br>
+                div.style.height = "100px"; <br>
+                </span>
+            </p>
+            <p>
+              <span class="text-lg font-semibold">classList Property</span> <br>
+              <span>classList is a built-in property in JavaScript that provides access to the list of classes on an element.</span>
+              <span>element.classList.add("newClass"); <br>
+                element.classList.remove("oldClass"); <br>
+                element.classList.toggle("newClass"); <br>
+                let hasClass = element.classList.contains("newClass"); <br>
+                </span
+            </p>
+          </div>
         </div>
       </div>
     </div>
